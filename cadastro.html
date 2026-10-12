@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Meu Site</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="lista.html">Lista</a>
+    <a href="cadastro.html">Cadastro</a>
+  </nav>
+
+  <main class="container">
+    <h1>Cadastro</h1>
+    <form id="form-cadastro" novalidate>
+      <label for="nome">Nome *</label>
+      <input id="nome" name="nome" type="text">
+      <span class="error" id="erro-nome"></span>
+
+      <label for="email">E-mail *</label>
+      <input id="email" name="email" type="email">
+      <span class="error" id="erro-email"></span>
+
+      <label for="telefone">Telefone *</label>
+      <input id="telefone" name="telefone" type="tel">
+      <span class="error" id="erro-telefone"></span>
+
+      <label for="data">Data *</label>
+      <input id="data" name="data" type="date">
+      <span class="error" id="erro-data"></span>
+
+      <label for="categoria">Categoria *</label>
+      <select id="categoria" name="categoria">
+        <option value="">Selecione...</option>
+        <option value="A">Categoria A</option>
+        <option value="B">Categoria B</option>
+        <option value="C">Categoria C</option>
+      </select>
+      <span class="error" id="erro-categoria"></span>
+
+      <label for="descricao">Descrição *</label>
+      <textarea id="descricao" name="descricao" rows="4"></textarea>
+      <span class="error" id="erro-descricao"></span>
+
+      <div style="margin-top: 20px;">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+
+      <p id="msg-sucesso" class="success"></p>
+      <p id="msg-geral" class="error"></p>
+    </form>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/cadastro.js"></script>
+</body>
+</html>
