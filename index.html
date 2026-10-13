@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Meu Site</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página inicial do projeto - Desenvolvimento Web" />
+  <link rel="icon" href="data:,">
+  <title>Home - Meu Projeto</title>
+
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
 </head>
-<body>
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="lista.html">Lista</a>
-    <a href="cadastro.html">Cadastro</a>
-  </nav>
+<body data-page="home">
+  <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
 
-  <main class="container">
-    <h1>Bem-vindo ao Meu Site</h1>
-    <p>Este é um parágrafo de exemplo.</p>
+  <div id="root">Carregando...</div>
 
-    <div class="card">
-      <h3>Seção Importante</h3>
-      <p>Esta é uma seção com conteúdo relevante.</p>
-      <a href="lista.html">
-        <button class="btn btn-primary">Clique Aqui</button>
-      </a>
-    </div>
-  </main>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+  <script src="js/api.js"></script>
+  <script src="js/loader.js"></script>
 </body>
 </html>

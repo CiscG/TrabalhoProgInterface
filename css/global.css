@@ -1,0 +1,160 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f9;
+  color: #222;
+}
+
+/* ---------- Skip link (acessibilidade) ---------- */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #1e293b;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 999;
+  text-decoration: none;
+  border-radius: 0 0 4px 0;
+}
+.skip-link:focus {
+  left: 0;
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* ---------- Foco visível (acessibilidade) ---------- */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  gap: 20px;
+  padding: 14px 20px;
+  background: #1e293b;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar a:hover,
+.navbar a.active {
+  text-decoration: underline;
+  color: #93c5fd;
+}
+
+/* ---------- Container ---------- */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ---------- Card ---------- */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 12px;
+}
+.card-title {
+  margin: 0 0 8px;
+  color: #1d4ed8;
+  font-size: 1.1rem;
+}
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* ---------- Botões ---------- */
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.2s;
+  color: #fff;
+}
+.btn-primary { background: #1d4ed8; }
+.btn-primary:hover { background: #1e3a8a; }
+.btn-danger { background: #b91c1c; }
+.btn-danger:hover { background: #7f1d1d; }
+
+/* ---------- Formulários ---------- */
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #767676;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+.error {
+  color: #b91c1c;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 4px;
+  font-weight: bold;
+}
+.success {
+  color: #166534;
+  font-weight: bold;
+  margin-top: 12px;
+}
+.form-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* ---------- Modal ---------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 100;
+}
+.modal {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 420px;
+  width: 100%;
+}
+.modal h2 { margin-top: 0; color: #1d4ed8; }
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 600px) {
+  .navbar { flex-direction: column; gap: 10px; }
+  .card-actions { flex-direction: column; }
+}

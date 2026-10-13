@@ -1,26 +1,36 @@
-# Meu Projeto Web
+# Trabalho de Desenvolvimento Web
 
-Aplicação web responsiva com HTML, CSS e JavaScript.
+Aplicação React (CDN) com API REST, sem build.
 
 ## 🔗 Demo
 https://SEU-USUARIO.github.io/meu-projeto/
 
 ## 🛠️ Tecnologias
-- HTML5 semântico
-- CSS3 (flexbox + media queries)
-- JavaScript (Fetch API + JSONPlaceholder)
+- React 18 (via CDN)
+- Fetch API + JSONPlaceholder
+- HTML5 + CSS3
+- JavaScript puro
 
 ## 👥 Integrantes
-- Nome 1 – Responsabilidade (ex.: HTML das telas)
-- Nome 2 – Responsabilidade (ex.: CSS + responsividade)
-- Nome 3 – Responsabilidade (ex.: consumo da API)
-- Nome 4 – Responsabilidade (ex.: formulário e validações)
+| Nome | Responsabilidade |
+|------|------------------|
+| Nome 1 | HTML + CSS |
+| Nome 2 | API REST |
+| Nome 3 | Formulário + validação |
+| Nome 4 | Acessibilidade + README |
 
 ## ✅ Requisitos atendidos
-- 3 telas responsivas (Home, Lista, Cadastro)
-- Componentes reutilizáveis (cards, botões via CSS)
-- Interações: busca, modal, exclusão
+- 3 telas responsivas
+- Componentes reutilizáveis: Button, Card, Navbar
+- Interações: busca, modal, edição, exclusão
 - Formulário com 6 campos + validação
-- API REST com GET, POST, PUT, DELETE
-- Acessibilidade (labels, semântica, contraste)
+- API REST: GET, POST, PUT, DELETE
+- Tratamento de erros com role="alert"
+- Acessibilidade AA (skip link, aria-*, contraste)
 - Deploy no GitHub Pages
+
+## 🚀 Como rodar
+\`\`\`bash
+python3 -m http.server 8000
+\`\`\`
+Acesse http://localhost:8000
